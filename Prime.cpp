@@ -18,7 +18,7 @@ int is_prime(int num) {
 int main() {
 	
     srand(time(NULL));
-    
+    do{
     int num1 = rand() % 10 + 1;
     int num2 = rand() % 10 + 1;
     int num3 = rand() % 10 + 1;
@@ -92,8 +92,8 @@ int main() {
         printf("CONGRATULATIONSSS!!!!!! YOU WIN THE GAME\n");
     } else {
         printf("Fail. Try again.......\n");
-    }
-    
-    return 0;
+    printf("Do you wish to continue(Y/N)\nPress 1 for Yes and 0 for No\n");
+    scanf("%d", &option);
+}while(option== 1);
 }
 
